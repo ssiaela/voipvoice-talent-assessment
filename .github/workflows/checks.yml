@@ -1,0 +1,18 @@
+name: checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Validate Python
+        run: python -m py_compile server.py
+      - name: Validate test configuration JSON
+        run: python -m json.tool seed.json > /dev/null

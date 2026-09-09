@@ -1,0 +1,28 @@
+# Runtime data / personal data
+/data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Logs / temp
+*.log
+*.tmp
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

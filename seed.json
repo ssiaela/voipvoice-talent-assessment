@@ -1,0 +1,1490 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "Quando mi viene affidato un compito, mi assicuro di portarlo a termine anche se nessuno controlla direttamente il mio lavoro.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Accountability e affidabilità",
+        "secondary": null
+      }
+    },
+    {
+      "id": 2,
+      "text": "Quando incontro un problema nuovo, cerco prima di comprenderne le cause invece di provare immediatamente una soluzione.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Problem solving e analisi",
+        "secondary": null
+      }
+    },
+    {
+      "id": 3,
+      "text": "Mi trovo a mio agio nel confrontarmi con persone che hanno opinioni diverse dalle mie.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Collaborazione e comunicazione",
+        "secondary": null
+      }
+    },
+    {
+      "id": 4,
+      "text": "Un cambiamento improvviso nei programmi tende a mettermi molto in difficoltà.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": true,
+        "primary": "Adattabilità",
+        "secondary": null
+      }
+    },
+    {
+      "id": 5,
+      "text": "Quando ho un obiettivo chiaro, organizzo autonomamente le attività necessarie per raggiungerlo.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Autonomia e iniziativa",
+        "secondary": "Orientamento al risultato"
+      }
+    },
+    {
+      "id": 6,
+      "text": "Se commetto un errore, preferisco comunicarlo rapidamente e cercare una soluzione.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Accountability e affidabilità",
+        "secondary": null
+      }
+    },
+    {
+      "id": 7,
+      "text": "Prima di prendere una decisione importante cerco di raccogliere le informazioni realmente necessarie.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Problem solving e analisi",
+        "secondary": null
+      }
+    },
+    {
+      "id": 8,
+      "text": "Quando lavoro in gruppo, cerco di capire anche le esigenze degli altri componenti del team.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Collaborazione e comunicazione",
+        "secondary": null
+      }
+    },
+    {
+      "id": 9,
+      "text": "Preferisco lavorare sempre nello stesso modo, anche quando esistono alternative potenzialmente migliori.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": true,
+        "primary": "Adattabilità",
+        "secondary": null
+      }
+    },
+    {
+      "id": 10,
+      "text": "Se un'attività si rivela più difficile del previsto, tendo comunque a cercare un modo per completarla.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Orientamento al risultato",
+        "secondary": "Autonomia e iniziativa"
+      }
+    },
+    {
+      "id": 11,
+      "text": "Rispetto scadenze e impegni anche quando contemporaneamente ho molte attività da gestire.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Accountability e affidabilità",
+        "secondary": null
+      }
+    },
+    {
+      "id": 12,
+      "text": "Davanti a informazioni contraddittorie, cerco di distinguere i fatti dalle interpretazioni.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Problem solving e analisi",
+        "secondary": null
+      }
+    },
+    {
+      "id": 13,
+      "text": "Quando non sono d'accordo con un collega riesco generalmente a spiegare la mia posizione senza creare inutili tensioni.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Collaborazione e comunicazione",
+        "secondary": null
+      }
+    },
+    {
+      "id": 14,
+      "text": "Riesco ad adattarmi abbastanza rapidamente a strumenti, procedure o modalità di lavoro nuove.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Adattabilità",
+        "secondary": null
+      }
+    },
+    {
+      "id": 15,
+      "text": "Mi capita di perdere interesse per un'attività quando i risultati non arrivano velocemente.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": true,
+        "primary": "Orientamento al risultato",
+        "secondary": null
+      }
+    },
+    {
+      "id": 16,
+      "text": "Se mi accorgo di non riuscire a rispettare una scadenza, avviso le persone coinvolte prima che diventi un problema.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Accountability e affidabilità",
+        "secondary": null
+      }
+    },
+    {
+      "id": 17,
+      "text": "Quando una prima soluzione non funziona, provo a osservare il problema da un punto di vista diverso.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Problem solving e analisi",
+        "secondary": null
+      }
+    },
+    {
+      "id": 18,
+      "text": "Mi interessa condividere informazioni che possono aiutare i colleghi a lavorare meglio.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Collaborazione e comunicazione",
+        "secondary": null
+      }
+    },
+    {
+      "id": 19,
+      "text": "Quando cambiano le priorità, riesco a riorganizzare il mio lavoro senza perdere di vista gli obiettivi principali.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Adattabilità",
+        "secondary": null
+      }
+    },
+    {
+      "id": 20,
+      "text": "Mi piace capire in che modo il mio lavoro contribuisce a un risultato più ampio.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Orientamento al risultato",
+        "secondary": null
+      }
+    },
+    {
+      "id": 21,
+      "text": "Se ricevo un'indicazione poco chiara, preferisco chiedere un chiarimento piuttosto che procedere sulla base di supposizioni.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Accountability e affidabilità",
+        "secondary": "Autonomia e iniziativa"
+      }
+    },
+    {
+      "id": 22,
+      "text": "Di fronte a un problema complesso tendo a dividerlo in parti più semplici da affrontare.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Problem solving e analisi",
+        "secondary": "Autonomia e iniziativa"
+      }
+    },
+    {
+      "id": 23,
+      "text": "Se un collega è in difficoltà e posso aiutarlo senza compromettere le mie priorità, cerco di farlo.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Collaborazione e comunicazione",
+        "secondary": null
+      }
+    },
+    {
+      "id": 24,
+      "text": "Lavorare in situazioni in cui non tutte le informazioni sono disponibili mi blocca facilmente.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": true,
+        "primary": "Adattabilità",
+        "secondary": null
+      }
+    },
+    {
+      "id": 25,
+      "text": "Quando raggiungo un risultato, cerco di capire anche cosa avrei potuto fare meglio.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Orientamento al risultato",
+        "secondary": null
+      }
+    },
+    {
+      "id": 26,
+      "text": "Quando qualcosa va storto, la mia prima reazione è cercare di capire di chi sia la responsabilità.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": true,
+        "primary": "Accountability e affidabilità",
+        "secondary": null
+      }
+    },
+    {
+      "id": 27,
+      "text": "Riesco a modificare la mia opinione quando emergono elementi concreti che dimostrano che un'altra soluzione è migliore.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Problem solving e analisi",
+        "secondary": "Adattabilità"
+      }
+    },
+    {
+      "id": 28,
+      "text": "Durante una discussione tendo ad ascoltare completamente l'altra persona prima di formulare la mia risposta.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Collaborazione e comunicazione",
+        "secondary": null
+      }
+    },
+    {
+      "id": 29,
+      "text": "Preferisco aspettare istruzioni precise prima di iniziare qualsiasi attività.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": true,
+        "primary": "Autonomia e iniziativa",
+        "secondary": null
+      }
+    },
+    {
+      "id": 30,
+      "text": "Quando devo scegliere tra più attività, considero priorità, scadenze e impatto sul risultato.",
+      "type": "scale",
+      "answers": [
+        {
+          "key": "1",
+          "text": "Per niente d’accordo",
+          "points": 1
+        },
+        {
+          "key": "2",
+          "text": "Poco",
+          "points": 2
+        },
+        {
+          "key": "3",
+          "text": "Né/Né",
+          "points": 3
+        },
+        {
+          "key": "4",
+          "text": "Abbastanza",
+          "points": 4
+        },
+        {
+          "key": "5",
+          "text": "Del tutto d’accordo",
+          "points": 5
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Orientamento al risultato",
+        "secondary": "Autonomia e iniziativa"
+      }
+    },
+    {
+      "id": 31,
+      "text": "Hai tre attività da completare nella stessa giornata e ti accorgi che probabilmente non riuscirai a rispettare tutte le scadenze.",
+      "type": "scenario",
+      "answers": [
+        {
+          "key": "A",
+          "text": "Chiedo al responsabile di indicarmi immediatamente quale attività devo svolgere per prima.",
+          "points": 3
+        },
+        {
+          "key": "B",
+          "text": "Lavoro più velocemente possibile e verifico a fine giornata cosa sono riuscito a terminare.",
+          "points": 1
+        },
+        {
+          "key": "C",
+          "text": "Valuto urgenza e impatto, definisco le priorità e segnalo tempestivamente eventuali criticità.",
+          "points": 4
+        },
+        {
+          "key": "D",
+          "text": "Le completo nell'ordine in cui mi sono state assegnate.",
+          "points": 2
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Orientamento al risultato",
+        "secondary": "Autonomia e iniziativa"
+      }
+    },
+    {
+      "id": 32,
+      "text": "Ti accorgi di aver commesso un errore che potrebbe avere conseguenze sul lavoro di un collega.",
+      "type": "scenario",
+      "answers": [
+        {
+          "key": "A",
+          "text": "Informo rapidamente le persone coinvolte, propongo una soluzione e verifico come evitare che accada nuovamente.",
+          "points": 4
+        },
+        {
+          "key": "B",
+          "text": "Spiego innanzitutto quali circostanze mi hanno portato a commettere l'errore.",
+          "points": 1
+        },
+        {
+          "key": "C",
+          "text": "Aspetto di capire se l'errore avrà effettivamente conseguenze.",
+          "points": 1
+        },
+        {
+          "key": "D",
+          "text": "Correggo l'errore autonomamente e non ne parlo se riesco a risolverlo.",
+          "points": 2
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Accountability e affidabilità",
+        "secondary": null
+      }
+    },
+    {
+      "id": 33,
+      "text": "Durante una riunione un collega propone una soluzione molto diversa dalla tua.",
+      "type": "scenario",
+      "answers": [
+        {
+          "key": "A",
+          "text": "Difendo la mia proposta perché l'ho già analizzata approfonditamente.",
+          "points": 1
+        },
+        {
+          "key": "B",
+          "text": "Chiedo al responsabile quale delle due soluzioni preferisce.",
+          "points": 2
+        },
+        {
+          "key": "C",
+          "text": "Evito il confronto e accetto la sua proposta.",
+          "points": 2
+        },
+        {
+          "key": "D",
+          "text": "Cerco di capire il suo ragionamento e confronto le due soluzioni sulla base di informazioni e obiettivi.",
+          "points": 4
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Collaborazione e comunicazione",
+        "secondary": null
+      }
+    },
+    {
+      "id": 34,
+      "text": "Ti viene assegnata un'attività che non hai mai svolto.",
+      "type": "scenario",
+      "answers": [
+        {
+          "key": "A",
+          "text": "Procedo autonomamente senza coinvolgere nessuno.",
+          "points": 3
+        },
+        {
+          "key": "B",
+          "text": "Cerco di capire l'obiettivo, raccolgo le informazioni necessarie, imposto il lavoro e chiedo supporto sui punti che non riesco a risolvere.",
+          "points": 4
+        },
+        {
+          "key": "C",
+          "text": "Chiedo che l'attività venga affidata a qualcuno con maggiore esperienza.",
+          "points": 1
+        },
+        {
+          "key": "D",
+          "text": "Aspetto istruzioni dettagliate prima di iniziare.",
+          "points": 2
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Autonomia e iniziativa",
+        "secondary": "Adattabilità"
+      }
+    },
+    {
+      "id": 35,
+      "text": "Una priorità sulla quale stai lavorando da diversi giorni viene improvvisamente ridimensionata a favore di una nuova urgenza.",
+      "type": "scenario",
+      "answers": [
+        {
+          "key": "A",
+          "text": "Continuo prima a terminare il lavoro già iniziato.",
+          "points": 1
+        },
+        {
+          "key": "B",
+          "text": "Aspetto indicazioni precise su ogni attività da sospendere.",
+          "points": 2
+        },
+        {
+          "key": "C",
+          "text": "Verifico le nuove priorità, valuto cosa mettere in pausa e riorganizzo il lavoro.",
+          "points": 4
+        },
+        {
+          "key": "D",
+          "text": "Interrompo immediatamente tutto ciò che stavo facendo e passo alla nuova attività.",
+          "points": 2
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Adattabilità",
+        "secondary": "Orientamento al risultato"
+      }
+    },
+    {
+      "id": 36,
+      "text": "Un cliente o un collega ti segnala un problema, ma le informazioni che ti fornisce sono incomplete.",
+      "type": "scenario",
+      "answers": [
+        {
+          "key": "A",
+          "text": "Trasferisco subito la questione a qualcuno che conosce meglio l'argomento.",
+          "points": 2
+        },
+        {
+          "key": "B",
+          "text": "Faccio alcune domande mirate per ricostruire il problema prima di decidere come intervenire.",
+          "points": 4
+        },
+        {
+          "key": "C",
+          "text": "Propongo subito la soluzione che considero più probabile.",
+          "points": 2
+        },
+        {
+          "key": "D",
+          "text": "Gli chiedo di ricontattarmi quando avrà tutte le informazioni.",
+          "points": 1
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Problem solving e analisi",
+        "secondary": null
+      }
+    },
+    {
+      "id": 37,
+      "text": "Ricevi un feedback negativo su un lavoro che ritenevi ben fatto.",
+      "type": "scenario",
+      "answers": [
+        {
+          "key": "A",
+          "text": "Ascolto il feedback, faccio domande per comprenderlo e valuto quali elementi utilizzare per migliorare.",
+          "points": 4
+        },
+        {
+          "key": "B",
+          "text": "Accetto il feedback senza discuterlo, anche se non sono d'accordo.",
+          "points": 2
+        },
+        {
+          "key": "C",
+          "text": "Preferisco confrontarmi con altri colleghi per capire se il feedback sia effettivamente corretto.",
+          "points": 3
+        },
+        {
+          "key": "D",
+          "text": "Spiego subito le ragioni delle mie scelte.",
+          "points": 1
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Collaborazione e comunicazione",
+        "secondary": "Adattabilità"
+      }
+    },
+    {
+      "id": 38,
+      "text": "Un collega ti chiede aiuto mentre stai lavorando a un'attività importante.",
+      "type": "scenario",
+      "answers": [
+        {
+          "key": "A",
+          "text": "Gli suggerisco di chiedere direttamente al responsabile.",
+          "points": 2
+        },
+        {
+          "key": "B",
+          "text": "Interrompo immediatamente ciò che sto facendo per aiutarlo.",
+          "points": 2
+        },
+        {
+          "key": "C",
+          "text": "Gli dico che non posso aiutarlo perché devo concentrarmi sulla mia attività.",
+          "points": 1
+        },
+        {
+          "key": "D",
+          "text": "Cerco di capire urgenza e necessità della richiesta e concordo quando e come posso supportarlo senza compromettere le priorità.",
+          "points": 4
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Collaborazione e comunicazione",
+        "secondary": "Orientamento al risultato"
+      }
+    },
+    {
+      "id": 39,
+      "text": "Ti accorgi che una procedura utilizzata abitualmente potrebbe essere resa più semplice ed efficace.",
+      "type": "scenario",
+      "answers": [
+        {
+          "key": "A",
+          "text": "Continuo a utilizzare la procedura esistente perché è quella prevista.",
+          "points": 1
+        },
+        {
+          "key": "B",
+          "text": "Raccolgo qualche elemento a supporto della mia idea e propongo il miglioramento alle persone coinvolte.",
+          "points": 4
+        },
+        {
+          "key": "C",
+          "text": "Ne parlo informalmente con i colleghi, ma aspetto che sia qualcun altro a proporre il cambiamento.",
+          "points": 2
+        },
+        {
+          "key": "D",
+          "text": "Modifico direttamente il processo e inizio a utilizzare il nuovo metodo.",
+          "points": 3
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Autonomia e iniziativa",
+        "secondary": null
+      }
+    },
+    {
+      "id": 40,
+      "text": "Devi prendere una decisione, ma non disponi di tutte le informazioni che vorresti.",
+      "type": "scenario",
+      "answers": [
+        {
+          "key": "A",
+          "text": "Rimando la decisione finché non dispongo di tutte le informazioni.",
+          "points": 1
+        },
+        {
+          "key": "B",
+          "text": "Chiedo a una persona più esperta di decidere al mio posto.",
+          "points": 2
+        },
+        {
+          "key": "C",
+          "text": "Identifico quali informazioni sono davvero indispensabili, raccolgo quelle disponibili e prendo una decisione valutando anche i possibili rischi.",
+          "points": 4
+        },
+        {
+          "key": "D",
+          "text": "Scelgo rapidamente sulla base della mia prima impressione.",
+          "points": 2
+        }
+      ],
+      "scoring": {
+        "inverse": false,
+        "primary": "Problem solving e analisi",
+        "secondary": "Adattabilità"
+      }
+    }
+  ],
+  "competencies": [
+    {
+      "name": "Accountability e affidabilità",
+      "suggestion": "Chiedere un esempio di errore o ritardo e verificare comunicazione, responsabilità e azioni correttive."
+    },
+    {
+      "name": "Problem solving e analisi",
+      "suggestion": "Proporre un problema concreto e osservare come raccoglie informazioni, formula ipotesi e valuta alternative."
+    },
+    {
+      "name": "Collaborazione e comunicazione",
+      "suggestion": "Approfondire un disaccordo con un collega e verificare ascolto, assertività e gestione del confronto."
+    },
+    {
+      "name": "Adattabilità",
+      "suggestion": "Chiedere un esempio di cambio di priorità, strumento o processo e come ha riorganizzato il lavoro."
+    },
+    {
+      "name": "Orientamento al risultato",
+      "suggestion": "Approfondire una situazione con più priorità e verificare criteri di scelta, perseveranza e attenzione all’impatto."
+    },
+    {
+      "name": "Autonomia e iniziativa",
+      "suggestion": "Chiedere un caso in cui ha dovuto partire con indicazioni incomplete e come ha bilanciato autonomia e richiesta di supporto."
+    }
+  ],
+  "ranges": [
+    {
+      "min": 80,
+      "max": 100,
+      "label": "Tendenza molto marcata",
+      "interview": "Verificare punti di forza con evidenze concrete"
+    },
+    {
+      "min": 65,
+      "max": 79.99,
+      "label": "Tendenza abbastanza marcata",
+      "interview": "Verificare punti di forza con evidenze concrete"
+    },
+    {
+      "min": 45,
+      "max": 64.99,
+      "label": "Area intermedia",
+      "interview": "Verificare coerenza con esempi comportamentali"
+    },
+    {
+      "min": 0,
+      "max": 44.99,
+      "label": "Tendenza poco rappresentata",
+      "interview": "Approfondire con esempi concreti; non interpretare come esclusione"
+    }
+  ],
+  "weights": {
+    "primary": 1.0,
+    "secondary": 1.0
+  }
+}
