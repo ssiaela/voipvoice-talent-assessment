@@ -1,1 +1,0 @@
-# Nessuna dipendenza Python di terze parti: il prototipo usa solo la standard library.

@@ -1,192 +1,135 @@
-# VoipVoice Talent Assessment
+# VoipVoice Talent Assessment — Supabase edition
 
-Applicazione interna per la gestione di un questionario attitudinale pre-colloquio.
+Versione online e multiutente del questionario attitudinale HR.
 
-Il progetto contiene due aree nettamente separate:
+## Architettura
 
-- **Area candidato**: accessibile solo tramite link personale; mostra esclusivamente il questionario assegnato.
-- **Area HR**: protetta da password; consente di creare inviti, consultare risultati, modificare domande/risposte/scoring e pubblicare nuove versioni del test.
+- **Frontend:** HTML/CSS/JavaScript statico, pubblicabile con GitHub Pages.
+- **Backend e database:** Supabase PostgreSQL.
+- **Login HR:** Supabase Auth (email + password).
+- **Candidati:** accesso tramite token personale, senza account.
+- **Scoring:** calcolato esclusivamente nel database; non viene inviato al browser del candidato.
+- **Storico:** ogni invito resta legato alla versione del test con cui è stato creato.
 
-La configurazione iniziale del questionario deriva dal file Excel fornito al progetto ed è salvata in `seed.json`.
+Il frontend pubblico contiene solo l'interfaccia. `seed.json`, `SUPABASE_SETUP.sql` e la logica di scoring restano nel repository privato e non vengono pubblicati da GitHub Pages.
 
-> Nota metodologica: questo strumento è pensato come supporto interno al colloquio. Non è un test psicometrico validato e non dovrebbe essere utilizzato come unico criterio di esclusione.
-
-## Struttura del progetto
+## File principali
 
 ```text
 .
-├── .env.example
-├── .gitignore
-├── .github/workflows/checks.yml
-├── Dockerfile
+├── .github/workflows/pages.yml
 ├── README.md
-├── requirements.txt
+├── SUPABASE_SETUP.sql
 ├── seed.json
-├── server.py
-├── AVVIA_WINDOWS.bat
-├── avvia_mac_linux.sh
-└── static/
-    └── index.html
+├── static/
+│   ├── index.html
+│   ├── app.js
+│   ├── styles.css
+│   ├── config.js
+│   └── .nojekyll
+└── supabase/
+    └── migrations/
+        └── 202609090001_initial.sql
 ```
 
-Il database SQLite viene creato a runtime e **non deve essere versionato su GitHub**.
+## Configurazione rapida
 
-## Avvio locale
+### 1. Crea il progetto Supabase
 
-### 1. Configurazione
+Crea un nuovo progetto su Supabase e attendi che il database sia pronto.
 
-Copia `.env.example` in un nuovo file chiamato `.env`.
+### 2. Inizializza il database
 
-Imposta almeno:
+Apri **SQL Editor** in Supabase, crea una nuova query, incolla tutto il contenuto di `SUPABASE_SETUP.sql` e premi **Run**.
 
-```env
-VV_INITIAL_PASSWORD=una-password-lunga-e-sicura
+Lo script crea:
+
+- whitelist utenti HR;
+- versioni del test;
+- bozza impostazioni;
+- inviti candidato;
+- risposte e risultati;
+- audit log;
+- funzioni RPC candidate/HR;
+- 40 domande reali e scoring iniziale v1.0.
+
+Le tabelle hanno RLS attivo e non concedono accesso diretto ai ruoli browser `anon` e `authenticated`.
+
+### 3. Crea l'utente HR
+
+In Supabase vai in **Authentication → Users** e crea manualmente l'utente HR con email e password.
+
+Poi torna nel SQL Editor ed esegui, sostituendo l'email:
+
+```sql
+insert into public.hr_users(user_id)
+select id from auth.users
+where lower(email)=lower('hr@voipvoice.it')
+on conflict(user_id) do nothing;
 ```
 
-La password iniziale deve contenere almeno 12 caratteri. Viene usata soltanto quando il database viene inizializzato per la prima volta. Successivamente può essere modificata dall'area HR.
+Solo gli utenti presenti in `hr_users` possono usare le funzioni HR.
 
-Il file `.env` è escluso da Git tramite `.gitignore`.
+### 4. Collega il frontend a Supabase
 
-### 2. Avvio su Windows
+Dal progetto Supabase copia:
 
-Fai doppio clic su:
+- Project URL;
+- Publishable key.
+
+Apri `static/config.js` e sostituisci i placeholder:
+
+```js
+export const VV_CONFIG = {
+  SUPABASE_URL: 'https://xxxx.supabase.co',
+  SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_xxxxx',
+  APP_URL: ''
+};
+```
+
+La Publishable Key è progettata per essere usata nel browser. Non inserire mai secret key/service-role key in `static/config.js`.
+
+### 5. Pubblica con GitHub Pages
+
+Fai commit/push dei nuovi file sul repository GitHub.
+
+In GitHub vai in:
+
+**Settings → Pages → Build and deployment → Source → GitHub Actions**
+
+La workflow `.github/workflows/pages.yml` pubblicherà esclusivamente la cartella `static/`.
+
+L'URL sarà normalmente:
 
 ```text
-AVVIA_WINDOWS.bat
+https://TUO-USERNAME.github.io/voipvoice-talent-assessment/
 ```
 
-oppure da terminale:
-
-```bash
-python server.py
-```
-
-### 3. Avvio su macOS/Linux
-
-```bash
-./avvia_mac_linux.sh
-```
-
-oppure:
-
-```bash
-python3 server.py
-```
-
-### 4. Apertura area HR
-
-Per impostazione predefinita:
+Area HR:
 
 ```text
-http://localhost:8087/hr
+https://TUO-USERNAME.github.io/voipvoice-talent-assessment/#hr
 ```
 
-Health check:
+I link candidato vengono generati automaticamente così:
 
 ```text
-http://localhost:8087/healthz
+https://TUO-USERNAME.github.io/voipvoice-talent-assessment/?candidate=TOKEN
 ```
 
-## Variabili d'ambiente
+Se usi un dominio personalizzato, puoi impostarlo in GitHub Pages e facoltativamente valorizzare `APP_URL` in `static/config.js`.
 
-| Variabile | Descrizione | Default |
-| --- | --- | --- |
-| `VV_INITIAL_PASSWORD` | Password HR usata solo per inizializzare un nuovo database | nessuno, obbligatoria al primo avvio |
-| `VV_HOST` | Interfaccia di rete su cui ascolta il server | `0.0.0.0` |
-| `VV_PORT` | Porta locale | `8087` |
-| `PORT` | Porta fornita da alcune piattaforme hosting; ha precedenza su `VV_PORT` | nessuno |
-| `VV_PUBLIC_BASE_URL` | URL pubblico usato per generare i link candidati | derivato dalla richiesta HTTP |
-| `VV_DB_PATH` | Percorso del database SQLite | `data/talent.db` |
-| `VV_SESSION_HOURS` | Durata della sessione HR | `8` |
+## Sicurezza
 
-Esempio per produzione:
+- Il candidato non riceve punti, competenze associate, item inversi o risultati.
+- I token candidato sono salvati nel database solo come hash SHA-256.
+- Le funzioni candidato accettano esclusivamente un token valido e non espongono dati HR.
+- Le funzioni HR richiedono sia un utente Supabase autenticato sia la presenza nella tabella `hr_users`.
+- Le tabelle applicative non sono interrogabili direttamente dal frontend.
+- Il cambio password usa Supabase Auth.
 
-```env
-VV_INITIAL_PASSWORD=imposta-questa-variabile-nei-secrets-del-provider
-VV_PUBLIC_BASE_URL=https://assessment.voipvoice.it
-VV_DB_PATH=/data/talent.db
-```
+Prima dell'uso con candidati reali vanno definite anche retention dei dati, privacy/GDPR, backup e procedure di gestione accessi.
 
-Non salvare mai password reali nel repository o in `.env.example`.
+## Nota GitHub Pages
 
-## Versionamento del test
-
-Quando HR modifica domande, risposte o scoring:
-
-1. le modifiche vengono salvate come bozza;
-2. la pubblicazione crea una nuova versione del test;
-3. i nuovi inviti utilizzano la nuova versione;
-4. candidati e risultati già esistenti restano associati alla versione precedente.
-
-Questo evita modifiche retroattive ai risultati storici.
-
-## Dati che il candidato non riceve
-
-Le API candidate espongono soltanto:
-
-- testo delle domande;
-- alternative di risposta;
-- stato del proprio test.
-
-Punti, competenze associate, chiavi di scoring e risultati restano lato server e sono disponibili soltanto alle API HR autenticate.
-
-## Database e dati personali
-
-SQLite viene creato nel percorso configurato da `VV_DB_PATH`. Per default:
-
-```text
-data/talent.db
-```
-
-`data/`, `*.db`, `*.sqlite` e `*.sqlite3` sono esclusi da Git.
-
-Prima dell'uso con candidati reali è necessario definire almeno:
-
-- politica di conservazione e cancellazione dei dati;
-- backup del database;
-- accessi HR e ruoli;
-- HTTPS;
-- protezioni contro tentativi di login ripetuti;
-- hardening CSRF/sessioni;
-- monitoraggio e logging appropriati.
-
-## Docker
-
-Il repository include un `Dockerfile`.
-
-Build:
-
-```bash
-docker build -t voipvoice-talent-assessment .
-```
-
-Esempio di avvio locale con volume persistente:
-
-```bash
-docker run --rm -p 8087:8087 \
-  -e VV_INITIAL_PASSWORD='una-password-lunga-e-sicura' \
-  -e VV_PUBLIC_BASE_URL='http://localhost:8087' \
-  -v "$(pwd)/data:/data" \
-  voipvoice-talent-assessment
-```
-
-In produzione il volume `/data` deve essere persistente se si continua a usare SQLite.
-
-## Controlli GitHub
-
-La workflow `.github/workflows/checks.yml` esegue automaticamente a ogni push/pull request:
-
-- verifica sintattica di `server.py`;
-- validazione JSON di `seed.json`.
-
-## Cosa NON caricare su GitHub
-
-Non committare:
-
-- `.env`;
-- database SQLite;
-- esportazioni con dati dei candidati;
-- backup del database;
-- password, token o altri segreti.
-
-Il repository dovrebbe essere **privato**, perché `seed.json` contiene domande e logica del test.
+GitHub Pages su repository **privati** richiede un piano GitHub che supporti Pages private (ad esempio Pro/Team/Enterprise). Se il tuo piano non lo consente, la cartella `static/` può essere pubblicata senza modifiche su un altro hosting statico, mantenendo Supabase come backend.
